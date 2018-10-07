@@ -20,6 +20,7 @@ else
 	echo "$file_name does not exist"
 fi
 
+
 #how to use this script
 #create a file test: touch test
 #remove write perission: chmod -w
