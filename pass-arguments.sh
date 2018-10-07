@@ -1,5 +1,5 @@
 
-#! bin/bash
+#! /bin/bash
 #input arguments are stored in 1,2,3 and so on
 #Run as ./pass-arguments.sh Par1 Par2 Par3
 echo $0 $1 $2 $3 '> echo $1 $2 $3'

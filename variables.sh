@@ -1,5 +1,5 @@
 
-#! bin/bash
+#! /bin/bash
 #system and user variables
 echo $BASH
 echo $BASH_VERSION

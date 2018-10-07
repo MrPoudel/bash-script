@@ -1,5 +1,5 @@
 
-#! bin/bash
+#! /bin/bash
 
 num1=20.5
 num2=5

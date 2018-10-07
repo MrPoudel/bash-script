@@ -1,5 +1,5 @@
 
-#! bin/bash
+#! /bin/bash
 count=10
 
 if [ $count -gt 9 ] 

@@ -1,5 +1,5 @@
 
-#! bin/bash
+#! /bin/bash
 
 #to interpret the back slash  we need to use -e
 echo -e "Enter the name of the file : \c"

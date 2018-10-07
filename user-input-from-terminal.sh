@@ -1,5 +1,5 @@
 
-#! bin/bash
+#! /bin/bash
 #inputs from user
 
 echo "Enter name : "

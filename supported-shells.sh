@@ -1,5 +1,5 @@
 
-#! bin/bash
+#! /bin/bash
 #print the supported shell types by OS
 echo "supported shell types by OS"
 cat /etc/shells
