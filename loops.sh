@@ -36,3 +36,11 @@ do
 	echo $i
 done
 
+#Another way
+
+for (( i=100; i<105; i++))
+do
+	echo $i
+done
+
+
