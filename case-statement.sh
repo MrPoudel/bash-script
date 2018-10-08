@@ -4,13 +4,13 @@
 vehicle=$1
 
 
-case $vehicle in
-	"car" )
-		echo "Rent of the  $vehicle is 100 dollar" ;;
-	"van" )
-		echo "Rent fo the $vehicle is 100 dollar"  ;;
-	"bycycle" )
-		echo "Rent fo the $vehicle is 100 dollar"  ;;
+case $country in
+	"Nepal" )
+		echo "$country belongs to Asia" ;;
+	"China" )
+		echo "$country belongs to Asia"  ;;
+	"Germany" )
+		echo "$country belongs to Europe"  ;;
 	* )
-		echo "The vehicle is unknown" ;;
+		echo "$country is beautiful" ;;
 esac
