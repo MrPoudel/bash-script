@@ -84,7 +84,6 @@ function isArgumentPresent {
     return 1	# failure code
   fi
 }
-
 # calling the function
 # and passing number of arguments passed to the script
 isArgumentPresent $#
@@ -129,4 +128,37 @@ Output:
 
 $ ./example.sh 
 The PID of the last run background process was 84014
+```
+# Example 5
+```integer comparison
+
+-eq
+is equal to
+
+if [ "$a" -eq "$b" ]
+
+-ne
+is not equal to
+
+if [ "$a" -ne "$b" ]
+
+-gt
+is greater than
+
+if [ "$a" -gt "$b" ]
+
+-ge
+is greater than or equal to
+
+if [ "$a" -ge "$b" ]
+
+-lt
+is less than
+
+if [ "$a" -lt "$b" ]
+
+-le
+is less than or equal to
+
+if [ "$a" -le "$b" ]
 ```
