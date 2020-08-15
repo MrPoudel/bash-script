@@ -184,18 +184,17 @@ $ grep -rnw '/path/to/somewhere/' -e 'pattern'
 
 Along with these, --exclude, --include, --exclude-dir flags could be used for efficient searching:
 This will only search through those files which have .c or .h extensions:
-grep --include=\*.{c,h} -rnw '/path/to/somewhere/' -e "pattern"
+
+$grep --include=\*.{c,h} -rnw '/path/to/somewhere/' -e "pattern"
+
 This will exclude searching all the files ending with .o extension:
 
-
 $ grep --exclude=*.o -rnw '/path/to/somewhere/' -e "pattern"
-
 
 For directories it's possible to exclude a particular directory(ies) through --exclude-dirparameter. For example, this will exclude the dirs dir1/, dir2/ and all of them
 matching *.dst/:
 
 $ grep --exclude-dir={dir1,dir2,*.dst} -rnw '/path/to/somewhere/' -e "pattern"
-
 
 How to find how many source files(.h and .c) have included the "Time.h" module in the current directory (recursively)?
 
