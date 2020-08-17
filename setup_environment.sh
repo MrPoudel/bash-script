@@ -1,6 +1,6 @@
 
 # Go to the home directory
-cd 
+cd ~
 
 # Terminator
 sudo add-apt-repository ppa:gnome-terminator
@@ -50,7 +50,7 @@ sudo apt-get install sublime-text # Terminal command: subl
 sudo apt install curl
 
 
-# Install Zsh + Oh My Zsh + Powerline fonts .... [PowerLevel10K]
+# Install Zsh + Oh My Zsh + Powerline fonts 
 sudo apt install zsh
 # Verify installation
 zsh --version
@@ -78,7 +78,6 @@ sudo apt-get install fonts-powerline # That's it.
 # "terminal.integrated.fontFamily": "Menlo for Powerline"
 # At this point the font problem in the integrated terminal of the vscode should dissappear.
 
-
 # Now, let's do the vim set up
 sudo apt-get install vim  
 
@@ -89,16 +88,34 @@ git clone https://github.com/sjl/badwolf.git
 echo "set runtimepath^=~/.vim/bundle/badwolf" > ~/.vimrc
 
 # Finally customize the .vimrc with following contents
-# set runtimepath^=~/.vim/bundle/badwolf
+echo "set runtimepath^=~/.vim/bundle/badwolf" >> ~/.vimrc
+echo "set number" >> ~/.vimrc
+echo "syntax on" >> ~/.vimrc
+echo "sset guifont=Menlo\ for\ Powerline" >> ~/.vimrc
 
-# set number
-# syntax on
-# set guifont=Menlo\ for\ Powerline
+# Install gig gui 
+sudo apt-get install git-gui
 
-# Install gig and gitk for difference
-# NOw install the gitk and gitg for git
+# Install gitk
+sudo apt-get install -y gitk
 
-# Already existing VMDK file can be added with add hard disk option.
-# Location will not be the default VMware's default location
+# Create the alias for git gui and gitk as gitg
+git gui & gitk &
 
-# vscode cross compilation set up (Vscode --> Dracula official theme)
+# Then create the alias for gitk and git-gui both as a gitg 
+# Since we are using the zshell so writing on basrc won't work
+echo "alias gitg='git gui & gitk &'" >> ~/.zshrc
+
+# Add some alias for the git commands
+git config --global alias.st status 
+git config --global alias.co checkout
+
+# Update the git identity with email and username
+git config --global user.email "baalkissna2012@gmail.com"
+git config --global user.name "Bal K. Poudel"
+
+# vscode cross compilation set up 
+## # Remote file editing ###
+# 1. Dracula official theme
+# 2. Remote VSCode for editing the files in RPi from visual studio code
+# 3. Install the rmate from this github page: https://github.com/aurora/rmate
