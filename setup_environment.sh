@@ -98,6 +98,7 @@ echo "set runtimepath^=~/.vim/bundle/badwolf" > ~/.vimrc
 # Install gig and gitk for difference
 # NOw install the gitk and gitg for git
 
-
+# Already existing VMDK file can be added with add hard disk option.
+# Location will not be the default VMware's default location
 
 # vscode cross compilation set up (Vscode --> Dracula official theme)
