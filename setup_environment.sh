@@ -100,7 +100,7 @@ sudo apt-get install git-gui
 sudo apt-get install -y gitk
 
 # Create the alias for git gui and gitk as gitg
-git gui & gitk &
+# git gui & gitk &
 
 # Then create the alias for gitk and git-gui both as a gitg 
 # Since we are using the zshell so writing on basrc won't work
