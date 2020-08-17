@@ -67,7 +67,16 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 # 2. Change ZSH_THEME="robbyrussell" to ZSH_THEME="agnoster"
 # 3. This theme change many not work properly unless you install the right fonts
 # So, install powerline-fonts
-sudo apt-get install fonts-powerline # That's it
+sudo apt-get install fonts-powerline # That's it.
+
+#Font support for the integrated terminal of the vscode:
+#1. Go to the GitHub repo: https://github.com/abertsch/Menlo-for-Powerline/blob/master/Menlo%20for%20Powerline.ttf
+#2. Download the  Powerline.ttf
+#3. Install the font by double clicking on it or install manually: cp "Menlo for Powerline.ttf" ~/.fonts
+#4. Update the cache font: fc-cache -vf ~/.fonts
+#5. Add the followind line to the settings.json inside .vscode
+# "terminal.integrated.fontFamily": "Menlo for Powerline"
+# At this point the font problem in the integrated terminal of the vscode should dissappear.
 
 
 # Now, let's do the vim set up
@@ -77,6 +86,18 @@ sudo apt-get install vim
 mkdir -p ~/.vim/bundle 
 cd ~/.vim/bundle/ 
 git clone https://github.com/sjl/badwolf.git 
-echo "set runtimepath^ = ~/.vim/bundle/badwolf" > ~/.vimrc
+echo "set runtimepath^=~/.vim/bundle/badwolf" > ~/.vimrc
 
-# Finally customize the .vimrc file ... 
+# Finally customize the .vimrc with following contents
+# set runtimepath^=~/.vim/bundle/badwolf
+
+# set number
+# syntax on
+# set guifont=Menlo\ for\ Powerline
+
+# Install gig and gitk for difference
+# NOw install the gitk and gitg for git
+
+
+
+# vscode cross compilation set up (Vscode --> Dracula official theme)
