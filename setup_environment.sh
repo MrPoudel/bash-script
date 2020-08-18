@@ -119,3 +119,4 @@ git config --global user.name "Bal K. Poudel"
 # 1. Dracula official theme
 # 2. Remote VSCode for editing the files in RPi from visual studio code
 # 3. Install the rmate from this github page: https://github.com/aurora/rmate
+# 4. Eclipse keymap (for navigatin CTRL+Left and CTRL+Right ...etc)
