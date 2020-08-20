@@ -2,6 +2,10 @@
 # Go to the home directory
 cd ~
 
+# Install java and graphviz (plantUML and many more other apps need it)
+sudo apt-get install -y graphviz
+sudo apt install default-jre
+
 # Terminator
 sudo add-apt-repository ppa:gnome-terminator
 sudo apt-get update   
