@@ -79,7 +79,7 @@ sudo apt-get install fonts-powerline # That's it.
 #3. Install the font by double clicking on it or install manually: cp "Menlo for Powerline.ttf" ~/.fonts
 #4. Update the cache font: fc-cache -vf ~/.fonts
 #5. Add the followind line to the settings.json inside .vscode
-# "terminal.integrated.fontFamily": "Menlo for Powerline"
+# {"terminal.integrated.fontFamily": "Menlo for Powerline"}
 # At this point the font problem in the integrated terminal of the vscode should dissappear.
 
 # Now, let's do the vim set up
