@@ -95,7 +95,7 @@ echo "set runtimepath^=~/.vim/bundle/badwolf" > ~/.vimrc
 echo "set runtimepath^=~/.vim/bundle/badwolf" >> ~/.vimrc
 echo "set number" >> ~/.vimrc
 echo "syntax on" >> ~/.vimrc
-echo "sset guifont=Menlo\ for\ Powerline" >> ~/.vimrc
+echo "set guifont=Menlo\ for\ Powerline" >> ~/.vimrc
 
 # Install gig gui 
 sudo apt-get install git-gui
