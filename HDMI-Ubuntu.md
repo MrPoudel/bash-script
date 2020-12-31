@@ -70,3 +70,21 @@ sudo dpkg-reconfigure gdm3
 sudo apt-get install --reinstall lightdm ubuntu-desktop
 ```
 
+Finally:
+``
+sudo lshw -C display
+[sudo] password for bal: 
+  *-display                 
+       description: VGA compatible controller
+       product: NVIDIA Corporation
+       vendor: NVIDIA Corporation
+       physical id: 0
+       bus info: pci@0000:01:00.0
+       version: a1
+       width: 64 bits
+       clock: 33MHz
+       capabilities: pm msi pciexpress vga_controller bus_master cap_list rom
+       configuration: driver=nvidia latency=0
+       resources: irq:170 memory:e8000000-e8ffffff memory:a0000000-afffffff memory:b0000000-b1ffffff ioport:4000(size=128) memory:e9080000-e90fffff
+
+```
