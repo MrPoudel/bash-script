@@ -20,6 +20,7 @@ DP-1 connected primary 1920x1080+1920+0 (normal left inverted right x axis y axi
    1920x1080     60.01*+  40.00  
 DP-2 disconnected (normal left inverted right x axis y axis)
 
+```
 - if does not work then :
 ```
 sudo nano /etc/default/grub
@@ -28,7 +29,6 @@ sudo update-grub
 sudo reboot
 ```
 
-```
 ###  2. Run inxi -G
 ```
 Graphics:  Card: NVIDIA Device 1fb8
