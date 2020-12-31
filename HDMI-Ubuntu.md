@@ -1,4 +1,4 @@
-## How to fix the HDMI diaplay on Ubuntu 18.04
+## How to fix the HDMI display on Ubuntu 18.04 [for second monitor]
 ### 1. Run: xrandr
 ```
 Screen 0: minimum 8 x 8, current 3840 x 1080, maximum 32767 x 32767
