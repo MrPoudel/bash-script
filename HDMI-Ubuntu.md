@@ -61,3 +61,12 @@ sudo apt-get update
 ```
 - Then go to software & updates and additional drivers 
 - Select the nvidia-driver-544 (proprietary,tested)
+
+
+Ref: 
+https://askubuntu.com/questions/1078539/hdmi-port-not-detected-on-ubuntu-18-04
+```
+sudo dpkg-reconfigure gdm3
+sudo apt-get install --reinstall lightdm ubuntu-desktop
+```
+
