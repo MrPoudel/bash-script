@@ -41,7 +41,7 @@ pidof Xorg
 sudo kill -9 <pid1> <pid2>
 ```
 
-### 5. If it does not work then update the nvidia drivers:
+### 3. If it does not work then update the nvidia drivers:
 ```
 sudo apt-get purge 'nvidia*'
 sudo add-apt-repository ppa:graphics-drivers
