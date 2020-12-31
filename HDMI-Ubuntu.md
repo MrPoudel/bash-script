@@ -1,5 +1,5 @@
 ## How to fix the HDMI diaplay on Ubuntu 18.04
-# 1. Run: xrandr
+### 1. Run: xrandr
 ```
 Screen 0: minimum 8 x 8, current 3840 x 1080, maximum 32767 x 32767
 DP-0 disconnected (normal left inverted right x axis y axis)
@@ -21,7 +21,7 @@ DP-1 connected primary 1920x1080+1920+0 (normal left inverted right x axis y axi
 DP-2 disconnected (normal left inverted right x axis y axis)
 
 ```
-# 2. Run inxi -G
+###  2. Run inxi -G
 ```
 Graphics:  Card: NVIDIA Device 1fb8
            Display Server: x11 (X.Org 1.20.8 ) drivers: nvidia (unloaded: modesetting,fbdev,vesa,nouveau)
@@ -29,19 +29,23 @@ Graphics:  Card: NVIDIA Device 1fb8
            OpenGL: renderer: Quadro T2000/PCIe/SSE2 version: 4.6.0 NVIDIA 455.45.01
 
 ```
-# if command is not recognized then install inxi
-# sudo apt-get update
-# sudo apt-get install inxi
+-  if command is not recognized then install inxi
+```
+sudo apt-get update
+sudo apt-get install inxi
+```
 
-# 2. sudo apt-get install nvidia-361
-# 3. pidof Xorg
-# 4. sudo kill -9 <pid1> <pid2>
+```
+sudo apt-get install nvidia-361
+pidof Xorg
+sudo kill -9 <pid1> <pid2>
+```
 
-# 5. If it does not work then update the nvidia drivers:
+### 5. If it does not work then update the nvidia drivers:
 ```
 sudo apt-get purge 'nvidia*'
 sudo add-apt-repository ppa:graphics-drivers
 sudo apt-get update
 ```
-# Then go to software & updates and additional drivers 
-# Select the nvidia-driver-544 (proprietary,tested)
+- Then go to software & updates and additional drivers 
+- Select the nvidia-driver-544 (proprietary,tested)
