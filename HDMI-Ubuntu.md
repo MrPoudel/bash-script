@@ -28,6 +28,10 @@ sudo nano /etc/default/grub
 sudo update-grub
 sudo reboot
 ```
+or
+```
+xrandr --output default --gamma 0:0:0 --mode 1920x1080
+```
 
 ###  2. Run inxi -G
 ```
