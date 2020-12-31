@@ -71,7 +71,7 @@ sudo apt-get install --reinstall lightdm ubuntu-desktop
 ```
 
 Finally:
-``
+```
 sudo lshw -C display
 [sudo] password for bal: 
   *-display                 
